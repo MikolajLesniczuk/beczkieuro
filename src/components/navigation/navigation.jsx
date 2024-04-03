@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import s from "./navigation.module.scss";
 import hamburger from "../../assets/images/svg/icon-hamburger.svg";
-import logo from "../../assets/images/svg/logo-bookmark.svg";
+import logo from "../../assets/alpfoto/logo.png";
 
 import { MobileMenu } from "../menuMobile/menuMobile";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navigation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,20 +35,28 @@ export const Navigation = () => {
       )}
 
       <div className={s.navdesktop}>
-        <div>
-          <img src={logo} alt="logo"></img>
-        </div>
-        <div>
-          <a className={s.features} href="#features">
-            Features
-          </a>
-          <a className={s.pricing} href="#download">
-            Pricing
-          </a>
-          <a className={s.contact} href="#contact">
-            Contact
-          </a>
-          <button className={s.btn}>Login</button>
+        <Link to="/">
+          <div>
+            <img className={s.logo} src={logo} alt="logo"></img>
+          </div>
+        </Link>
+
+        <div className={s.boxnav}>
+          <NavLink className={s.features} to="/onas">
+            O nas
+          </NavLink>
+
+          <NavLink className={s.pricing} to="/realizacje">
+            Realizacje{" "}
+          </NavLink>
+
+          <NavLink className={s.oferta} to="/oferta">
+            Oferta
+          </NavLink>
+          <NavLink className={s.contact} to="/kontakt">
+            Kontakt
+          </NavLink>
+          <button className={s.btn}>Wyślij zapytanie</button>
         </div>
       </div>
     </div>

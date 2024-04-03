@@ -1,78 +1,122 @@
-import React, { useState } from "react";
+import React from "react";
 import s from "./features.module.scss";
-import img1 from "../../assets/images/svg/illustration-features-tab-1.svg";
-import img2 from "../../assets/images/svg/illustration-features-tab-2.svg";
-import img3 from "../../assets/images/svg/illustration-features-tab-3.svg";
+import malowanie from "../../assets/alpfoto/zakres/malowaniee.png";
+import renowacja from "../../assets/alpfoto/zakres/renowacja.png";
+import mycie from "../../assets/alpfoto/zakres/mycie.png";
+import montaz from "../../assets/alpfoto/zakres/montaz.png";
+import ptak from "../../assets/alpfoto/zakres/ptaki.png";
+import dekarka from "../../assets/alpfoto/zakres/dekarka.png";
+import banery from "../../assets/alpfoto/zakres/banery.png";
+import snieg from "../../assets/alpfoto/zakres/snieg.png";
+import { Link } from "react-router-dom";
 
-export const Features = () => {
-  const data = [
-    {
-      title: "Simple Bookmarking",
-      main: "Bookmark in one click",
-      desc: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you ,manage your favourite sites.",
-      img: img1,
-    },
-    {
-      title: "Speedy Searching",
-      main: "Intelligent search",
-
-      desc: "Our powerful search feature will help you find saved sites in no time at all. No need to trawl throught all of your bookmarks.",
-      img: img2,
-    },
-    {
-      title: "Easy Sharing",
-      main: "Share your bookmarks",
-      desc: "Easily share your bookmarks and collections with others. Create a shearable link that you can send at the click of a button.",
-      img: img3,
-    },
-  ];
-
-  const [selectedCategory, setSelectedCategory] = useState(0);
-
-  const handleCategoryClick = (index) => {
-    setSelectedCategory(index);
+export const Zakres = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <div>
-      <h2 id="features" className={s.title}>
-        Features
-      </h2>
-      <p className={s.info}>
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
-      <div className={s.position}>
-        {data.map((el, index) => (
-          <div
-            key={index}
-            className={`${s.category} ${
-              selectedCategory === index ? s.selectedCategory : ""
-            }`}
-            onClick={() => handleCategoryClick(index)}
-          >
-            {el.title}
+    <div className={s.margin}>
+      {" "}
+      <div className={s.flex}>
+        <Link onClick={scrollToTop} className={s.link} to="/malowanie">
+          <div className={s.box}>
+            <img className={s.img} alt="x" src={malowanie}></img>
+            <h3>MALOWANIE ELEWACJI</h3>
+            <p>
+              Świeżo wyglądająca elewacja to z pewnością wizytówka każdego
+              budynku.
+            </p>
           </div>
-        ))}
-      </div>
-      <div>
-        {selectedCategory !== null && (
-          <div className={s.flex}>
-            <div className={s.after}>
-              <img
-                className={s.photo}
-                src={data[selectedCategory].img}
-                alt="img"
-              ></img>
-            </div>
-            <div className={s.box}>
-              <h1 className={s.main}> {data[selectedCategory].main}</h1>
-              <div className={s.desc}>{data[selectedCategory].desc} </div>
-              <button className={s.btn}>More info</button>
-            </div>
+        </Link>
+
+        <Link onClick={scrollToTop} className={s.link} to="/renowacja">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={renowacja}></img>
+            <h3>RENOWACJA ELEWACJI</h3>
+            <p>
+              Renowacja niewątpliwie zmieni prezencję budynku. Podejmiemy się
+              naprawy każdej elewacji.
+            </p>
           </div>
-        )}
+        </Link>
+
+        <Link onClick={scrollToTop} className={s.link} to="/mycie">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={mycie}></img>
+            <h3>MYCIE ELEWACJI</h3>
+            <p>
+              Mycie ciśnieniowe z pewnością pomoże w pozbyciu się wszelkich
+              zanieczyszczeń z elewacji.
+            </p>
+          </div>
+        </Link>
+        <Link onClick={scrollToTop} className={s.link} to="/montaz">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={montaz}></img>
+            <h3>PRACE MONTAŻOWE</h3>
+            <p>
+              Potrzebujesz powiesić ozdoby pod sufitem galerii? Chętnie Cię w
+              tym wyręczymy.
+            </p>
+          </div>
+        </Link>
+        <Link onClick={scrollToTop} className={s.link} to="/ptaki">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={ptak}></img>
+            <h3>ZABEZPIECZENIA PRZECIW PTAKOM</h3>
+            <p>
+              Nie wiesz co zrobić z ptasim gangiem? Nasza ekipa z pewnością
+              znajdzie rozwiązanie.
+            </p>
+          </div>
+        </Link>
+
+        <Link onClick={scrollToTop} className={s.link} to="/dekarka">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={dekarka}></img>
+            <h3>PRACE DEKARSKIE</h3>
+            <p>
+              Smołowanie dachu czy wymiana całej konstrukcji. Z pewnością
+              podejmiemy się każdego wyzwania.
+            </p>
+          </div>
+        </Link>
+        <Link onClick={scrollToTop} className={s.link} to="/banery">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={banery}></img>
+            <h3>BANERY REKLAMOWE WRAZ Z OŚWIETLENIEM</h3>
+            <p>Montaż materiałów reklamowych to nasza specjalność.</p>
+          </div>
+        </Link>
+        <Link onClick={scrollToTop} className={s.link} to="/odsniezanie">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={snieg}></img>
+            <h3>ODŚNIEŻANIE DACHÓW</h3>
+            <p>
+              Odśnieżamy zarówno domu jednorodzinne, jak i całe kompleksy
+              osiedlowe.
+            </p>
+          </div>
+        </Link>
+        <Link onClick={scrollToTop} className={s.link} to="/porzadek">
+          <div className={s.box}>
+            {" "}
+            <img className={s.img} alt="x" src={mycie}></img>
+            <h3>UTRZYMANIE PORZĄDKU</h3>
+            <p>Czystość</p>
+          </div>
+        </Link>
       </div>
     </div>
   );

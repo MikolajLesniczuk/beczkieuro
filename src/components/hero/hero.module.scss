@@ -1,110 +1,44 @@
-.imghero {
-  width: 90%;
-  margin-top: 40px;
-  height: auto;
+.boxflex {
+  display: flex;
 }
-.title {
-  margin: 40px auto 40px auto;
-  width: 100%;
-  font-size: 30px;
+
+.dlaczego {
   text-align: center;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
+  margin-bottom: 60px;
+  font-size: 30px;
 }
 .desc {
-  width: 100%;
-  font-size: 18px;
   text-align: center;
-  color: hsl(229, 8%, 60%);
-  font-family: "Rubik", sans-serif;
+  margin: 0 auto 100px auto;
+  width: 90%;
+  font-size: 20px;
+
+  letter-spacing: normal;
+  line-height: 1.5;
 }
 
-.btn {
-  margin: 20px 15px 20px 0;
-  width: 130px;
-  height: 40px;
-  border-radius: 8px;
-  margin-right: 15px;
-  background-color: azure;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: none;
-  font-family: "Rubik", sans-serif;
+.img {
+  width: 100px;
+  height: 100px;
 }
-.btn_position {
-  display: flex;
-  justify-content: center;
+.center {
+  text-align: center;
+  margin-right: 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
 }
-.btn_chrome:hover {
-  transition: ease 0.5s;
-  background-color: hsl(231, 69%, 60%);
-  cursor: pointer;
-  color: white;
+.center:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+  background-color: #9b6b6b;
 }
 
-.btn_firefox:hover {
-  transition: ease 0.4s;
-  background-color: hsl(231, 69%, 60%);
-  cursor: pointer;
-  color: white;
-}
-
-.after::after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 200px;
-  right: 0px;
-  width: 60%;
-  height: 130px;
-  background-color: hsl(231, 69%, 60%);
-  border-bottom-left-radius: 40%;
-  border-top-left-radius: 40%;
-}
-
-@media (min-width: 768px) {
-  .position {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    max-width: 1440px;
-  }
-  .box {
-    margin-top: 80px;
-    max-width: 400px;
-    width: 40%;
-    /* margin-left: 100px; */
-  }
-  .imghero {
-    margin: 90px 0 0 0;
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-  }
-  .title {
-    text-align: start;
-    font-size: 40px;
-    margin-bottom: 30px;
-  }
-  .desc {
-    text-align: start;
-    margin-bottom: 30px;
-    font-size: 24px;
-    color: hsl(229, 8%, 60%);
-  }
-  .btn_position {
-    justify-content: flex-start;
-  }
-
-  .after::after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    top: 350px;
-    right: 0px;
-    width: 40%;
-    height: 300px;
-    background-color: hsl(231, 69%, 60%);
-    border-bottom-left-radius: 40%;
-    border-top-left-radius: 40%;
-  }
+.heroImage {
+  border: 2px solid white;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
 }
