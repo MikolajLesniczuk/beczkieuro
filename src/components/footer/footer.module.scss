@@ -2,7 +2,7 @@
   width: 100%;
   margin-top: 80px;
   display: block;
-  height: 200px;
+  height: 100%;
   background-color: #9b6b6b;
 }
 .logo {
@@ -22,7 +22,7 @@
 .width {
   margin: 0 auto 0 auto;
 
-  max-width: 1200px;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -48,45 +48,119 @@
   margin-top: 40px;
 }
 .flexik {
-  // margin-left: 50px;
-  // margin-right: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  // margin: 0 auto;
 }
 .flexkolumn {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
-// @media (min-width: 768px) {
-//   .icon {
-//     margin-top: 45px;
-//     margin-right: 40px;
-//     &:hover {
-//       transform: scale(1.3);
-//     }
-//   }
+.title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.phrase {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
 
-//   .bg {
-//     height: 100px;
-//   }
-//   .content {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-start;
-//   }
-//   .link {
-//     padding-top: 33px;
-//     margin-left: 50px;
-//   }
-//   .logo {
-//     margin-left: 20px;
-//   }
-//   .width {
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//   }
-// }
+.style {
+  text-decoration: none;
+  color: yellow;
+}
+.tel {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+.adres {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+.email {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.posbutton {
+  margin: 40px auto 90px auto;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: yellow;
+  outline: none;
+  cursor: pointer;
+}
+.pos {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .bg {
+    width: 100%;
+    margin-top: 80px;
+    display: block;
+    height: 400px;
+    background-color: #9b6b6b;
+  }
+  .logo {
+    margin: 40px;
+    width: 100px;
+    height: 100px;
+  }
+  .positionsocial {
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  .icon {
+    margin: 10px 20px 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .width {
+    margin: 0 auto 0 auto;
+
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    // margin-left: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    // margin-top: 15px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .odwiedz {
+    margin-top: 40px;
+  }
+  .flexik {
+    // margin-left: 50px;
+    // margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flexkolumn {
+    display: flex;
+    flex-direction: column;
+  }
+}

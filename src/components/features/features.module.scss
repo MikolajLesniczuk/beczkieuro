@@ -1,12 +1,12 @@
 .flex {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 .img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   padding: 15px;
 }
 
@@ -16,12 +16,14 @@
 .box {
   border: 1px solid white;
   border-radius: 20px;
-  width: 80%;
-  height: 300px;
+  // width: 300px;
+  height: 200px;
   padding: 20px;
+  margin: 0 auto 20px auto;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+
 .box:hover {
   transform: scale(1.1);
   background-color: #9b6b6b;
@@ -31,4 +33,40 @@
 .link {
   text-decoration: none;
   color: white;
+}
+@media (min-width: 768px) {
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+  }
+
+  .margin {
+    text-align: center;
+  }
+  .box {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .box:hover {
+    transform: scale(1.1);
+    background-color: #9b6b6b;
+    box-shadow: 0 4px 40px rgba(255, 215, 0, 0.5);
+    // box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  .link {
+    text-decoration: none;
+    color: white;
+  }
 }

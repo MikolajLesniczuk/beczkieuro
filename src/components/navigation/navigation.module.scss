@@ -21,6 +21,10 @@
   background: none;
   border: none;
 }
+.logo {
+  width: 200px;
+  height: 200px;
+}
 
 @media (min-width: 768px) {
   .logo {
@@ -34,19 +38,21 @@
     display: none;
   }
   .boxnav {
-    margin-top: 100px;
-    display: flex;
-  }
-  .navdesktop {
-    max-width: 100%;
-    margin-top: 20px;
-    // margin-right: 100px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
   }
+  .navdesktop {
+    max-width: 800%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    // margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
   .features {
     text-decoration: none;
-    margin-right: 30px;
+    // margin-right: 30px;
     // margin-top: 20px;
     text-align: center;
     padding: 10px;
@@ -66,7 +72,7 @@
   }
   .pricing {
     text-decoration: none;
-    margin-right: 30px;
+    // margin-right: 30px;
     // margin-top: 20px;
     text-align: center;
     padding: 10px;
@@ -87,7 +93,7 @@
   }
   .oferta {
     text-decoration: none;
-    margin-right: 30px;
+    // margin-right: 30px;
     // margin-top: 20px;
 
     font-size: 20px;
@@ -129,7 +135,7 @@
   }
   .btn {
     cursor: pointer;
-    margin-left: 60px;
+    margin-left: 40px;
     width: 150px;
     outline: none;
     height: 50px;

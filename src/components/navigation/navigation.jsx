@@ -5,6 +5,7 @@ import logo from "../../assets/alpfoto/logo.png";
 
 import { MobileMenu } from "../menuMobile/menuMobile";
 import { Link, NavLink } from "react-router-dom";
+import { ModalZap } from "../modal/modal";
 
 export const Navigation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,7 +28,9 @@ export const Navigation = () => {
         </div>
       ) : (
         <div className={s.display}>
-          <img src={logo} alt="Logo" />
+          <Link to="/">
+            <img className={s.logo} src={logo} alt="Logo" />
+          </Link>
           <button className={s.btn} onClick={openModal}>
             <img src={hamburger} alt="Burger" />
           </button>
@@ -56,7 +59,15 @@ export const Navigation = () => {
           <NavLink className={s.contact} to="/kontakt">
             Kontakt
           </NavLink>
-          <button className={s.btn}>Wyślij zapytanie</button>
+          <div>
+            {isModalOpen ? (
+              <ModalZap closeModal={closeModal} />
+            ) : (
+              <button onClick={openModal} className={s.btn}>
+                Wyślij zapytanie
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>

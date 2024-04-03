@@ -1,18 +1,20 @@
 import s from "./menuMobile.module.scss";
 
-import logo2 from "../../assets/images/svg/logo-bookmark2.svg";
+import logo2 from "../../assets/alpfoto/logo.png";
 
 import close from "../../assets/images/svg/icon-close.svg";
 import twitter from "../../assets/images/svg/icon-twitter.svg";
 import facebook from "../../assets/images/svg/icon-facebook.svg";
+import { Link, NavLink } from "react-router-dom";
 export const MobileMenu = ({ closeModal }) => {
   return (
     <>
       <div className={s.bg}>
         <div className={s.firstlane}>
-          <a href="#main">
+          <Link onClick={closeModal} to="/">
             <img className={s.logo} src={logo2} alt="logo"></img>
-          </a>
+          </Link>
+
           <img
             className={s.close}
             src={close}
@@ -21,16 +23,20 @@ export const MobileMenu = ({ closeModal }) => {
           ></img>
         </div>
         <div>
-          <a href="#features" className={s.features}>
-            Features
-          </a>
-          <a href="#download" className={s.pricing}>
-            Pricing
-          </a>
-          <a href="#contact" className={s.contact}>
-            contact
-          </a>
-          <button className={s.login}>Login</button>
+          <NavLink onClick={closeModal} className={s.features} to="/onas">
+            O nas
+          </NavLink>
+
+          <NavLink onClick={closeModal} className={s.pricing} to="/realizacje">
+            Realizacje{" "}
+          </NavLink>
+          <NavLink onClick={closeModal} className={s.contact} to="/oferta">
+            Oferta
+          </NavLink>
+          <NavLink onClick={closeModal} className={s.contact} to="/kontakt">
+            Kontakt
+          </NavLink>
+          <button className={s.login}>Wyślij zapytanie</button>
         </div>
         <div className={s.positionsocial}>
           <a

@@ -1,0 +1,28 @@
+.bgmodal {
+  background-color: white;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+}
+.close {
+  color: black;
+  font-size: 30px;
+  text-align: end;
+  margin-right: 30px;
+}
+.title {
+  color: black;
+}
+.flex {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.text::placeholder {
+  width: 200px;
+  height: 100px;
+}

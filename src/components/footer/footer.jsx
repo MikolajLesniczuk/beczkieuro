@@ -2,69 +2,70 @@ import s from "./footer.module.scss";
 // import logo from "../../assets/alpfoto/logo.png";
 // import twitter from "../../assets/images/svg/icon-twitter.svg";
 // import facebook from "../../assets/images/svg/icon-facebook.svg";
+import tel from "../../assets/alpfoto/phone.png";
+import email from "../../assets/alpfoto/envelop.png";
+import { useState } from "react";
+import { ModalZap } from "../modal/modal";
 
 export const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
-      {/* <div className={s.bg}>
-        <div className={s.width}>
-          <div className={s.content}>
-            <a href="#main">
-              <img className={s.logo} src={logo} alt="logo"></img>
-            </a>
-            <a className={s.link} href="#features">
-              Features
-            </a>
-            <a className={s.link} href="#download">
-              Pricing
-            </a>
-            <a className={s.link} href="#contact">
-              Contact
-            </a>
-          </div>
-
-          <div>
-            <p className={s.odwiedz}>Odwiedz nas</p>
-            <div className={s.positionsocial}>
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className={s.icon} src={facebook} alt="logofacebook" />
-              </a>
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className={s.icon} src={twitter} alt="logotwitter" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div className={s.bg}>
         <div className={s.width}>
-          <div>Zapraszamy do kontaktu.</div>
-          <div>Usługi alpinistyczne to nasz praca ale również pasja.</div>
-          <div>Bądźmy w kontakcie</div>
+          <div className={s.title}>Zapraszamy do kontaktu</div>
+          <div className={s.phrase}>
+            Usługi alpinistyczne to nasza praca ale również pasja.
+          </div>
+          <div className={s.phrase}>Bądźmy w kontakcie</div>
           <div className={s.flexik}>
-            <div className={s.flexkolumn}>
-              <p>Adres</p>
-              <p>Okocimska 3</p>
-            </div>
+            {/* <div className={s.flexkolumn}>
+              <img className={s.adres} src={adres} alt="adres"></img>
+              <a
+                className={s.adres}
+                href="https://maps.app.goo.gl/FwUAU8nGzqruFS3E9"
+                target="_blank"
+              >
+                Okocimska 3
+              </a>
+            </div> */}
+
             <div className={s.flexkolumn}>
               {" "}
-              <p>Telefon</p>
-              <p>514028592</p>
+              <img className={s.email} alt="email" src={email}></img>
+              <a className={s.style} href="mailto:alpimix.kontakt@gmail.com">
+                alpimix.kontakt@gmail.com
+              </a>
             </div>
+
             <div className={s.flexkolumn}>
               {" "}
-              <p>E-mail</p>
-              <p>alpimix.kontakt@gmail.com</p>
+              <img className={s.tel} alt="tel" src={tel}></img>
+              <a className={s.style} href="tel:+48514028592">
+                514028592
+              </a>
             </div>
+          </div>
+          <div className={s.pos}>
+            {isModalOpen ? (
+              // <button onClick={openModal}>Wyślij zapytanie</button>
+              <ModalZap closeModal={closeModal} />
+            ) : (
+              <button className={s.posbutton} onClick={openModal}>
+                Wyślij zapytanie
+              </button>
+
+              // <button onClick={closeModal}>legancko</button>
+            )}
           </div>
         </div>
       </div>
