@@ -1,9 +1,13 @@
 .bg {
   width: 100%;
+
   margin-top: 80px;
   display: block;
   height: 100%;
-  background-color: #9b6b6b;
+  background-image: url(../../assets/alpfoto/realiza/panorama.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .logo {
   margin: 40px;
@@ -61,32 +65,43 @@
 .title {
   text-align: center;
   margin-top: 20px;
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: black;
 }
 .phrase {
+  color: black;
+
   text-align: center;
-  font-size: 20px;
-  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto 0 auto;
 }
 
+.phrase2 {
+  color: yellow;
+
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px auto 30px auto;
+}
 .style {
   text-decoration: none;
   color: yellow;
+  font-size: 20px;
 }
 .tel {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 60px;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
-.adres {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 15px;
-}
+
 .email {
-  width: 40px;
-  height: 40px;
+  margin-top: 10px;
+  width: 70px;
+  height: 60px;
   margin-bottom: 15px;
 }
 
@@ -103,12 +118,31 @@
   margin: 0 auto;
 }
 @media (min-width: 768px) {
+  .title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: black;
+  }
+  .phrase {
+    color: yellow;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px auto 0 auto;
+  }
+
   .bg {
     width: 100%;
     margin-top: 80px;
     display: block;
-    height: 400px;
-    background-color: #9b6b6b;
+    height: 450px;
+    background-image: url(../../assets/alpfoto/realiza/panorama.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .logo {
     margin: 40px;
@@ -140,7 +174,7 @@
     align-items: center;
   }
   .link {
-    color: white;
+    color: black;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
     // margin-top: 15px;

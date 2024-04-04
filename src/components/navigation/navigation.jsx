@@ -17,6 +17,12 @@ export const Navigation = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 550,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div>
@@ -29,44 +35,53 @@ export const Navigation = () => {
       ) : (
         <div className={s.display}>
           <Link to="/">
-            <img className={s.logo} src={logo} alt="Logo" />
+            <div>
+              <img className={s.logo} src={logo} alt="logo"></img>
+            </div>
           </Link>
+
           <button className={s.btn} onClick={openModal}>
             <img src={hamburger} alt="Burger" />
           </button>
         </div>
       )}
 
-      <div className={s.navdesktop}>
-        <Link to="/">
-          <div>
-            <img className={s.logo} src={logo} alt="logo"></img>
-          </div>
-        </Link>
+      <div className={s.bgim}>
+        <div className={s.navdesktop}>
+          <Link to="/">
+            <div>
+              <img className={s.logo} src={logo} alt="logo"></img>
+            </div>
+          </Link>
 
-        <div className={s.boxnav}>
-          <NavLink className={s.features} to="/onas">
-            O nas
-          </NavLink>
+          <div className={s.boxnav}>
+            <NavLink onClick={scrollToTop} className={s.features} to="/onas">
+              O nas
+            </NavLink>
 
-          <NavLink className={s.pricing} to="/realizacje">
-            Realizacje{" "}
-          </NavLink>
+            <NavLink
+              onClick={scrollToTop}
+              className={s.pricing}
+              to="/realizacje"
+            >
+              Realizacje{" "}
+            </NavLink>
 
-          <NavLink className={s.oferta} to="/oferta">
-            Oferta
-          </NavLink>
-          <NavLink className={s.contact} to="/kontakt">
-            Kontakt
-          </NavLink>
-          <div>
-            {isModalOpen ? (
-              <ModalZap closeModal={closeModal} />
-            ) : (
-              <button onClick={openModal} className={s.btn}>
-                Wyślij zapytanie
-              </button>
-            )}
+            <NavLink onClick={scrollToTop} className={s.oferta} to="/oferta">
+              Oferta
+            </NavLink>
+            <NavLink onClick={scrollToTop} className={s.contact} to="/kontakt">
+              Kontakt
+            </NavLink>
+            <div>
+              {isModalOpen ? (
+                <ModalZap closeModal={closeModal} />
+              ) : (
+                <button onClick={openModal} className={s.btn}>
+                  Wyślij zapytanie
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

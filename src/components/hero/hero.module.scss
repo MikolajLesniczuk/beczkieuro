@@ -49,6 +49,13 @@
 .center {
   margin-bottom: 40px;
 }
+.odtl {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
 @media (min-width: 768px) {
   .boxflex {
@@ -99,5 +106,12 @@
     margin: 0 auto;
     width: 90%;
     height: auto;
+  }
+  .odtl {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 }

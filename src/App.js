@@ -19,8 +19,9 @@ import { Navigation } from "./components/navigation/navigation";
 export const App = () => {
   return (
     <>
+      <Navigation />
+
       <div className={s.container}>
-        <Navigation />
         <Routes>
           <Route path="/" element={<Mainpage />} />
           <Route path="/malowanie" element={<Malowanie />} />

@@ -18,7 +18,7 @@ export const Onas = () => {
         <div className={s.flex}>
           <div className={s.box}>
             <p className={s.cyfra}>1.</p>
-            <h3>Omówienie zakresu prac</h3>
+            <h3 className={s.title}>Omówienie zakresu prac</h3>
             <p>
               Do każdego zlecenie podchodzimy indywidualnie, dlatego tak istotny
               jest kontakt z nami.

@@ -2,8 +2,8 @@ import s from "./footer.module.scss";
 // import logo from "../../assets/alpfoto/logo.png";
 // import twitter from "../../assets/images/svg/icon-twitter.svg";
 // import facebook from "../../assets/images/svg/icon-facebook.svg";
-import tel from "../../assets/alpfoto/phone.png";
-import email from "../../assets/alpfoto/envelop.png";
+import tel from "../../assets/alpfoto/pngegg.png";
+import email from "../../assets/alpfoto/mail.png";
 import { useState } from "react";
 import { ModalZap } from "../modal/modal";
 
@@ -26,7 +26,7 @@ export const Footer = () => {
           <div className={s.phrase}>
             Usługi alpinistyczne to nasza praca ale również pasja.
           </div>
-          <div className={s.phrase}>Bądźmy w kontakcie</div>
+          <div className={s.phrase2}>Bądźmy w kontakcie</div>
           <div className={s.flexik}>
             {/* <div className={s.flexkolumn}>
               <img className={s.adres} src={adres} alt="adres"></img>

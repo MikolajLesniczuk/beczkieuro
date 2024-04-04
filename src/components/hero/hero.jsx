@@ -1,15 +1,15 @@
 import s from "./hero.module.scss";
-import logo from "../../assets/alpfoto/logo.png";
 import dosw from "../../assets/alpfoto/bezp.png";
 import prof from "../../assets/alpfoto/prof.png";
 import bezp from "../../assets/alpfoto/bezpie.png";
 import cert from "../../assets/alpfoto/cert.png";
-import mainPict from "../../assets/alpfoto/mainpage.png";
+// import mainPict from "../../assets/alpfoto/mainpage.png";
+import odtl from "../../assets/alpfoto/realiza/otdl.jpg";
 
 export const Hero = () => {
   return (
     <div>
-      <img className={s.heroImage} alt="main" src={mainPict}></img>
+      {/* <img className={s.heroImage} alt="main" src={mainPict}></img> */}
       <div className={s.dlaczego}>Dlaczego my?</div>
       <div className={s.desc}>
         Oferujemy wysokiej jakości usługi alpinistyczne oraz prace na
@@ -84,7 +84,7 @@ export const Hero = () => {
         </div>
       </div>
       <div>
-        <img src={logo} alt="x"></img>
+        <img className={s.odtl} src={odtl} alt="x"></img>
       </div>
     </div>
   );
