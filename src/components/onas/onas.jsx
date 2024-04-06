@@ -1,8 +1,8 @@
 import s from "./onas.module.scss";
 export const Onas = () => {
   return (
-    <div>
-      <div>
+    <div className={s.bg}>
+      <div className={s.container}>
         <p className={s.desc}>
           Alpimix to warszawska firma zajmująca się pracami na wysokości.
           Wykorzystujemy do tego techniki dostępu linowego, drabiny, podnośniki
@@ -14,12 +14,12 @@ export const Onas = () => {
           Gwarantujemy najwyższą jakość oraz terminowość w realizacji usług.
         </p>
 
-        <h3>Jak działamy?</h3>
+        <h3 className={s.jak}>Jak działamy?</h3>
         <div className={s.flex}>
           <div className={s.box}>
             <p className={s.cyfra}>1.</p>
             <h3 className={s.title}>Omówienie zakresu prac</h3>
-            <p>
+            <p className={s.opis}>
               Do każdego zlecenie podchodzimy indywidualnie, dlatego tak istotny
               jest kontakt z nami.
             </p>
@@ -27,7 +27,7 @@ export const Onas = () => {
           <div className={s.box}>
             <p className={s.cyfra}>2.</p>
             <h3>Wycena</h3>
-            <p>
+            <p className={s.opis}>
               Każde zlecenie to nowe wyzwanie, które wymaga indywidualnego
               podejścia oraz sprzętu.
             </p>
@@ -35,7 +35,7 @@ export const Onas = () => {
           <div className={s.box}>
             <p className={s.cyfra}>3.</p>
             <h3>Wykonanie zleconych prac</h3>
-            <p>
+            <p className={s.opis}>
               Zadowolenie klienta jest dla nas najważniejsze, dlatego do
               wykonania każdego zlecenia podchodzimy z maksymalnym
               zaangażowaniem.
@@ -44,7 +44,7 @@ export const Onas = () => {
           <div className={s.box}>
             <p className={s.cyfra}>4.</p>
             <h3>Finalizacja zlecenia</h3>
-            <p>
+            <p className={s.opis}>
               Wyróżnia to brak ukrytych kosztów, pojawiających się często
               podczas zakończenia pracy.
             </p>

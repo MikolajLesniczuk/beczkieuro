@@ -21,28 +21,30 @@ import twentythree from "../../assets/alpfoto/realiza/23.jpg";
 export const Realizacje = () => {
   return (
     <div>
-      <div>Opis</div>
+      <div className={s.opis}>Nasze przykładowe zdjęcia z realizacji</div>
       <div className={s.positionphoto}>
-        <img alt="something" className={s.photo} src={nineteen}></img>
-        <img alt="something" className={s.photo} src={two}></img>
+        <div className="gallery">
+          <img alt="something" className={s.photo} src={nineteen}></img>
+          <img alt="something" className={s.photo} src={two}></img>
 
-        <img alt="something" className={s.photo} src={one}></img>
-        <img alt="something" className={s.photo} src={three}></img>
+          <img alt="something" className={s.photo} src={one}></img>
+          <img alt="something" className={s.photo} src={three}></img>
 
-        <img alt="something" className={s.photo} src={four}></img>
-        <img alt="something" className={s.photo} src={five}></img>
-        <img alt="something" className={s.photo} src={six}></img>
-        <img alt="something" className={s.photo} src={seven}></img>
-        <img alt="something" className={s.photo} src={eight}></img>
-        <img alt="something" className={s.photo} src={nine}></img>
-        <img alt="something" className={s.photo} src={eleven}></img>
-        <img alt="something" className={s.photo} src={twelve}></img>
-        <img alt="something" className={s.photo} src={fifteen}></img>
-        <img alt="something" className={s.photo} src={sixteen}></img>
-        <img alt="something" className={s.photo} src={seventeen}></img>
-        <img alt="something" className={s.photo} src={eighteen}></img>
-        <img alt="something" className={s.photo} src={twenty}></img>
-        <img alt="something" className={s.photo} src={twentythree}></img>
+          <img alt="something" className={s.photo} src={four}></img>
+          <img alt="something" className={s.photo} src={five}></img>
+          <img alt="something" className={s.photo} src={six}></img>
+          <img alt="something" className={s.photo} src={seven}></img>
+          <img alt="something" className={s.photo} src={eight}></img>
+          <img alt="something" className={s.photo} src={nine}></img>
+          <img alt="something" className={s.photo} src={eleven}></img>
+          <img alt="something" className={s.photo} src={twelve}></img>
+          <img alt="something" className={s.photo} src={fifteen}></img>
+          <img alt="something" className={s.photo} src={sixteen}></img>
+          <img alt="something" className={s.photo} src={seventeen}></img>
+          <img alt="something" className={s.photo} src={eighteen}></img>
+          <img alt="something" className={s.photo} src={twenty}></img>
+          <img alt="something" className={s.photo} src={twentythree}></img>
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,13 @@
   flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px 50px 20px;
+}
+.opis {
+  color: beige;
+  font-size: 18px;
 }
 .img {
   width: 50px;
@@ -12,12 +19,13 @@
 
 .margin {
   text-align: center;
+  padding-top: 80px;
 }
 .box {
   border: 1px solid white;
   border-radius: 20px;
   // width: 300px;
-  height: 200px;
+  height: 250px;
   padding: 20px;
   margin: 0 auto 20px auto;
   cursor: pointer;
@@ -34,12 +42,16 @@
   text-decoration: none;
   color: white;
 }
+.title {
+  padding-bottom: 60px;
+}
 @media (min-width: 768px) {
   .flex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-content: center;
+    max-width: 1200px;
   }
   .img {
     width: 100px;
@@ -54,7 +66,7 @@
     border: 1px solid white;
     border-radius: 20px;
     width: 80%;
-    height: 300px;
+    height: 350px;
     padding: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -68,5 +80,9 @@
   .link {
     text-decoration: none;
     color: white;
+  }
+  .title {
+    padding-bottom: 60px;
+    font-size: 40px;
   }
 }

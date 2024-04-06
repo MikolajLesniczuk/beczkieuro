@@ -10,9 +10,9 @@ import { ModalZap } from "../modal/modal";
 export const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
+  // const openModal = () => {
+  //   setIsModalOpen(true);
+  // };
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -41,17 +41,17 @@ export const Footer = () => {
 
             <div className={s.flexkolumn}>
               {" "}
-              <img className={s.email} alt="email" src={email}></img>
               <a className={s.style} href="mailto:alpimix.kontakt@gmail.com">
+                <img className={s.email} alt="email" src={email}></img>
                 alpimix.kontakt@gmail.com
               </a>
             </div>
 
             <div className={s.flexkolumn}>
               {" "}
-              <img className={s.tel} alt="tel" src={tel}></img>
               <a className={s.style} href="tel:+48514028592">
-                514028592
+                <img className={s.tel} alt="tel" src={tel}></img>
+                +48514028592
               </a>
             </div>
           </div>
@@ -60,7 +60,10 @@ export const Footer = () => {
               // <button onClick={openModal}>Wyślij zapytanie</button>
               <ModalZap closeModal={closeModal} />
             ) : (
-              <button className={s.posbutton} onClick={openModal}>
+              <button
+                className={s.posbutton}
+                // onClick={openModal}
+              >
                 Wyślij zapytanie
               </button>
 

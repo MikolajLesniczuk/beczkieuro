@@ -14,11 +14,7 @@
   width: 100px;
   height: 100px;
 }
-.positionsocial {
-  margin-right: 150px;
-  display: flex;
-  justify-content: center;
-}
+
 .icon {
   margin: 10px 20px 0 10px;
   transition: transform 0.3s ease-in-out;
@@ -92,6 +88,7 @@
   font-size: 20px;
 }
 .tel {
+  display: block;
   width: 80px;
   height: 60px;
   margin-bottom: 15px;
@@ -99,6 +96,8 @@
 }
 
 .email {
+  display: block;
+
   margin-top: 10px;
   width: 70px;
   height: 60px;
@@ -152,16 +151,13 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .logo {
     margin: 40px;
     width: 100px;
     height: 100px;
   }
-  .positionsocial {
-    margin-right: 150px;
-    display: flex;
-    justify-content: center;
-  }
+
   .icon {
     margin: 10px 20px 0 10px;
     transition: transform 0.3s ease-in-out;
