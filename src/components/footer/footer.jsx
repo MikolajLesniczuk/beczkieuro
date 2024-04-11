@@ -10,9 +10,9 @@ import { ModalZap } from "../modal/modal";
 export const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // const openModal = () => {
-  //   setIsModalOpen(true);
-  // };
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -60,10 +60,7 @@ export const Footer = () => {
               // <button onClick={openModal}>Wyślij zapytanie</button>
               <ModalZap closeModal={closeModal} />
             ) : (
-              <button
-                className={s.posbutton}
-                // onClick={openModal}
-              >
+              <button className={s.posbutton} onClick={openModal}>
                 Wyślij zapytanie
               </button>
 

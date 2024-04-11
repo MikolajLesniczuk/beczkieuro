@@ -77,10 +77,7 @@ export const Navigation = () => {
               {isModalOpen ? (
                 <ModalZap closeModal={closeModal} />
               ) : (
-                <button
-                  // onClick={openModal}
-                  className={s.btn}
-                >
+                <button onClick={openModal} className={s.btn}>
                   Wyślij zapytanie
                 </button>
               )}
