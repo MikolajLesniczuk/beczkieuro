@@ -17,7 +17,7 @@ app.post("/send-email", async (req, res) => {
 
   const message = {
     to: "alpimix.kontakt@gmail.com",
-    from: "alpimix.kontakt@gmail.com",
+    from: "mikuniolesniczuk@gmail.com",
     subject: "Nowe zapytanie",
     text: `Telefon: ${telefon}\nTreść zapytania: ${trescZapytania}\nE-mail : ${email}`,
   };
