@@ -37,7 +37,7 @@ export const App = () => {
           <Route path="/onas" element={<Onas />} />
           <Route path="/realizacje" element={<Realizacje />} />
           <Route path="/oferta" element={<Oferta />} />
-          <Route path="/send-email" element={<ModalZap />} />
+          {/* <Route path="/send-email" element={<ModalZap />} /> */}
         </Routes>
       </div>
       <Footer />
