@@ -16,16 +16,13 @@ export const ModalZap = ({ closeModal }) => {
     };
 
     try {
-      const response = await fetch(
-        "https://alpimix-65dx.vercel.app/send-email",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("http://localhost:3050/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         console.log("E-mail wysłany!");

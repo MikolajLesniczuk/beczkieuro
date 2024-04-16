@@ -15,6 +15,7 @@ import { Onas } from "./components/onas/onas";
 import { Realizacje } from "./components/realizacje/realizacje";
 import { Oferta } from "./components/oferta/oferta";
 import { Navigation } from "./components/navigation/navigation";
+import { ModalZap } from "./components/modal/modal";
 
 export const App = () => {
   return (
@@ -36,6 +37,7 @@ export const App = () => {
           <Route path="/onas" element={<Onas />} />
           <Route path="/realizacje" element={<Realizacje />} />
           <Route path="/oferta" element={<Oferta />} />
+          <Route path="/send-email" element={<ModalZap />} />
         </Routes>
       </div>
       <Footer />
