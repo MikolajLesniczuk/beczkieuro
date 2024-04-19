@@ -16,7 +16,7 @@ export const ModalZap = ({ closeModal }) => {
     };
 
     try {
-      const response = await fetch("http://localhost:3050/send-email", {
+      const response = await fetch("https://alpimix.vercel.app/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
