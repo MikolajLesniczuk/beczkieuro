@@ -15,7 +15,6 @@ import { Onas } from "./components/onas/onas";
 import { Realizacje } from "./components/realizacje/realizacje";
 import { Oferta } from "./components/oferta/oferta";
 import { Navigation } from "./components/navigation/navigation";
-import { ModalZap } from "./components/modal/modal";
 
 export const App = () => {
   return (

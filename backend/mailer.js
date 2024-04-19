@@ -30,7 +30,9 @@ app.post("/send-email", async (req, res) => {
     res.status(500).send("Wystąpił błąd podczas wysyłania e-maila.");
   }
 });
-
+app.get("/gets", (req, res) => {
+  res.send("Hello, world!");
+});
 app.listen(PORT, () => {
   console.log(`Serwer nasłuchuje na porcie ${PORT}`);
 });
