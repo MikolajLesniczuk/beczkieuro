@@ -44,6 +44,7 @@ export const ModalZap = ({ closeModal }) => {
           <div className={s.flex}>
             <label className={s.title}>Twój Email</label>
             <input
+              className={s.input}
               type="email"
               placeholder="Twój email"
               value={email}
@@ -53,6 +54,7 @@ export const ModalZap = ({ closeModal }) => {
           <div className={s.flex}>
             <label className={s.title}>Telefon</label>
             <input
+              className={s.input}
               type="tel"
               placeholder="Twój telefon"
               value={telefon}
@@ -62,13 +64,15 @@ export const ModalZap = ({ closeModal }) => {
           <div className={s.flex}>
             <label className={s.title}>Treść zapytania</label>
             <input
-              className={s.text}
+              className={s.input2}
               type="text"
               placeholder="Treść zapytania"
               value={trescZapytania}
               onChange={(e) => setTrescZapytania(e.target.value)}
             />
-            <button type="submit">Wyślij formularz</button>
+            <button className={s.btn} type="submit">
+              Wyślij formularz
+            </button>
           </div>
         </form>
       </div>
