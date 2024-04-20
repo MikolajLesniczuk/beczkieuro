@@ -1,3 +1,58 @@
+.bordermapy {
+  text-align: center;
+}
+.mapa {
+  margin-top: 60px;
+  width: 80%;
+}
+.email {
+  display: block;
+
+  margin: 0 auto 20px auto;
+  width: 70px;
+  height: 60px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tel {
+  display: block;
+  width: 80px;
+  height: 60px;
+  margin: 50px auto 0 auto;
+}
 .title {
+  text-align: center;
+  margin: 30px auto 30px auto;
   font-size: 30px;
+  color: beige;
+}
+.link {
+  //   padding-left: 20px;
+  text-decoration: none;
+  color: beige;
+}
+@media (min-width: 768px) {
+  .mapa {
+    margin-top: 60px;
+    height: 400px;
+    width: 80%;
+  }
+  .email {
+    width: 80px;
+    height: 80px;
+  }
+  .tel {
+    width: 80px;
+    height: 80px;
+  }
+  .link {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 36px;
+    color: beige;
+  }
 }
