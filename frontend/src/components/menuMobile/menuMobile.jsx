@@ -6,7 +6,16 @@ import close from "../../assets/images/svg/icon-close.svg";
 import twitter from "../../assets/images/svg/icon-twitter.svg";
 import facebook from "../../assets/images/svg/icon-facebook.svg";
 import { Link, NavLink } from "react-router-dom";
+import { ModalZap } from "../modal/modal";
+import { useState } from "react";
+
 export const MobileMenu = ({ closeModal }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <>
       <div className={s.bg}>
@@ -36,7 +45,15 @@ export const MobileMenu = ({ closeModal }) => {
           <NavLink onClick={closeModal} className={s.contact} to="/kontakt">
             Kontakt
           </NavLink>
-          <button className={s.login}>Wyślij zapytanie</button>
+          <div>
+            {isModalOpen ? (
+              <ModalZap closeModal={closeModal} />
+            ) : (
+              <button onClick={openModal} className={s.login}>
+                Wyślij zapytanie
+              </button>
+            )}
+          </div>
         </div>
         <div className={s.positionsocial}>
           <a

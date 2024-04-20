@@ -77,11 +77,9 @@ export const Navigation = () => {
               {isModalOpen ? (
                 <ModalZap closeModal={closeModal} />
               ) : (
-                // <NavLink to="/send-email">
                 <button onClick={openModal} className={s.btn}>
                   Wyślij zapytanie
                 </button>
-                // </NavLink>
               )}
             </div>
           </div>

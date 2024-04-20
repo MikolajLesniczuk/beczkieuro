@@ -26,7 +26,7 @@ export const Onas = () => {
           </div>
           <div className={s.box}>
             <p className={s.cyfra}>2.</p>
-            <h3>Wycena</h3>
+            <h3 className={s.title}>Wycena</h3>
             <p className={s.opis}>
               Każde zlecenie to nowe wyzwanie, które wymaga indywidualnego
               podejścia oraz sprzętu.
@@ -34,7 +34,7 @@ export const Onas = () => {
           </div>
           <div className={s.box}>
             <p className={s.cyfra}>3.</p>
-            <h3>Wykonanie zleconych prac</h3>
+            <h3 className={s.title}>Wykonanie zleconych prac</h3>
             <p className={s.opis}>
               Zadowolenie klienta jest dla nas najważniejsze, dlatego do
               wykonania każdego zlecenia podchodzimy z maksymalnym
@@ -43,7 +43,7 @@ export const Onas = () => {
           </div>
           <div className={s.box}>
             <p className={s.cyfra}>4.</p>
-            <h3>Finalizacja zlecenia</h3>
+            <h3 className={s.title}>Finalizacja zlecenia</h3>
             <p className={s.opis}>
               Wyróżnia to brak ukrytych kosztów, pojawiających się często
               podczas zakończenia pracy.

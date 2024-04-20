@@ -28,16 +28,16 @@
 
 .title {
   text-align: center;
-  font-size: 36px;
-  //   padding-top: 250px;
-  padding-bottom: 50px;
-  margin-top: 0;
+  font-size: 25px;
+  padding-top: 50px;
+  // padding-bottom: 50px;
+  margin: 0 auto 30px auto;
   text-transform: uppercase;
 }
 
 .title2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 25px;
   //   padding-top: 50px;
   padding-bottom: 50px;
   //   margin-top: 50px;
@@ -45,15 +45,17 @@
 }
 .desc {
   text-align: center;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 16px;
   line-height: 1.15;
   font-weight: 500;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
   color: beige;
 }
 .li {
+  text-align: center;
+  width: 100%;
   font-size: 30px;
   font-weight: 500;
   color: beige;
@@ -101,7 +103,7 @@
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.15;
     font-weight: 500;
     padding-bottom: 50px;
