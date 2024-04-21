@@ -25,6 +25,9 @@ export const ModalZap = ({ closeModal }) => {
       });
 
       if (response.ok) {
+        setEmail("");
+        setTelefon("");
+        setTrescZapytania("");
         console.log("E-mail wysłaaaaany!");
       } else {
         console.error("Wystąpił problem podczas wysyłania e-maila.");

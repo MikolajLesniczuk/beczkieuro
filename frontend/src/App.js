@@ -24,6 +24,7 @@ export const App = () => {
 
       <div className={s.container}>
         <Routes>
+          <Route path="*" element={<Mainpage />} />
           <Route path="/" element={<Mainpage />} />
           <Route path="/malowanie" element={<Malowanie />} />
           <Route path="/renowacja" element={<Renowacja />} />
