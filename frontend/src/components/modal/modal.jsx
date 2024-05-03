@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import s from "./modal.module.scss";
-
+import Notiflix from "notiflix";
 export const ModalZap = ({ closeModal }) => {
   const [email, setEmail] = useState("");
   const [telefon, setTelefon] = useState("");
@@ -29,7 +29,9 @@ export const ModalZap = ({ closeModal }) => {
         setTelefon("");
         setTrescZapytania("");
         console.log("E-mail wysłaaaaany!");
+        Notiflix.Notify.success("Email został wysłany poprawnie");
       } else {
+        Notiflix.Notify.failure("Podczas wysyłania e-maila wystąpił błąd");
         console.error("Wystąpił problem podczas wysyłania e-maila.");
       }
     } catch (error) {
