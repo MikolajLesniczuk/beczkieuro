@@ -26,4 +26,11 @@
   .opis {
     font-size: 36px;
   }
+  .photo {
+    width: 400px;
+    height: 350px;
+    margin: 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+  }
 }

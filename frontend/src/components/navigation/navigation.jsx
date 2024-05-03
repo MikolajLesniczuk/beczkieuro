@@ -50,7 +50,7 @@ export const Navigation = () => {
         <div className={s.navdesktop}>
           <Link to="/">
             <div>
-              <img className={s.logo} src={logo} alt="logo"></img>
+              <div className={s.logo}> Zbiorniki stalowe</div>
             </div>
           </Link>
 
@@ -59,16 +59,12 @@ export const Navigation = () => {
               O nas
             </NavLink>
 
-            <NavLink
-              onClick={scrollToTop}
-              className={s.pricing}
-              to="/realizacje"
-            >
-              Realizacje{" "}
+            <NavLink onClick={scrollToTop} className={s.pricing} to="/oferta">
+              Oferta{" "}
             </NavLink>
 
-            <NavLink onClick={scrollToTop} className={s.oferta} to="/oferta">
-              Oferta
+            <NavLink onClick={scrollToTop} className={s.oferta} to="/transport">
+              Transport
             </NavLink>
             <NavLink onClick={scrollToTop} className={s.contact} to="/kontakt">
               Kontakt
