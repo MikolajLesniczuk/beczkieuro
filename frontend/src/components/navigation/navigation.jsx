@@ -40,7 +40,7 @@ export const Navigation = () => {
             </div>
           </Link>
 
-          <button className={s.btn} onClick={openModal}>
+          <button className={s.btnham} onClick={openModal}>
             <img src={hamburger} alt="Burger" />
           </button>
         </div>

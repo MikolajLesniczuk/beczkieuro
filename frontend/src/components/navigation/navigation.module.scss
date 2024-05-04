@@ -11,7 +11,7 @@
   height: 200px;
   // background-image: url(../../assets/alpfoto/mainpage.png);
   // background-image: url(../../assets/alpfoto/realiza/bicek.jpg);
-  background-image: url(../../assets/beczki/2.jpg);
+  background-image: url(../../assets/beczki/6.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,15 +25,28 @@
   height: 20px;
 }
 .btn {
-  background: none;
+  background: black;
   border: none;
-  margin-bottom: 120px;
-  margin-right: 20px;
+  margin: 0 20px 120px 0;
   cursor: not-allowed;
+  width: 40px;
+  height: 40px;
+}
+.btnham {
+  padding: 8px;
+  background: black;
+  border: none;
+
+  margin: 30px 20px 0 0;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
 }
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  margin-top: 25px;
+  margin-left: 30px;
+  height: 60px;
 }
 
 @media (min-width: 768px) {

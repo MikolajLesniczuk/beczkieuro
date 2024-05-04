@@ -24,7 +24,7 @@ export const Footer = () => {
         <div className={s.width}>
           <div className={s.title}>Zapraszamy do kontaktu</div>
           <div className={s.phrase}>
-            Jeżeli potrzebujesz dodatkowych informacji skontatuj się z nami
+            Jeżeli potrzebujesz dodatkowych informacji skontaktuj się z nami
           </div>
           <div className={s.phrase2}></div>
           <div className={s.flexik}>

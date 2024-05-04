@@ -1,6 +1,6 @@
 import s from "./menuMobile.module.scss";
 
-import logo2 from "../../assets/alpfoto/logo.png";
+import logo2 from "../../assets/beczki/7logo.jpg";
 
 import close from "../../assets/images/svg/icon-close.svg";
 import twitter from "../../assets/images/svg/icon-twitter.svg";
@@ -36,8 +36,8 @@ export const MobileMenu = ({ closeModal }) => {
             O nas
           </NavLink>
 
-          <NavLink onClick={closeModal} className={s.pricing} to="/realizacje">
-            Realizacje{" "}
+          <NavLink onClick={closeModal} className={s.pricing} to="/transport">
+            Transport
           </NavLink>
           <NavLink onClick={closeModal} className={s.contact} to="/oferta">
             Oferta

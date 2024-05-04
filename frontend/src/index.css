@@ -1,6 +1,6 @@
 .active {
-  color: blue !important ;
+  color: #251879 !important ;
 
-  border: 2px solid green;
+  border: 2px solid;
   border-radius: 5px;
 }
