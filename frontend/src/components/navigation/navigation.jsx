@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import s from "./navigation.module.scss";
 import hamburger from "../../assets/images/svg/icon-hamburger.svg";
-import logo from "../../assets/alpfoto/logo.png";
+import logo from "../../assets/beczki/7logo.jpg";
 
 import { MobileMenu } from "../menuMobile/menuMobile";
 import { Link, NavLink } from "react-router-dom";
@@ -48,9 +48,9 @@ export const Navigation = () => {
 
       <div className={s.bgim}>
         <div className={s.navdesktop}>
-          <Link to="/">
+          <Link className={s.lynk} to="/">
             <div>
-              <div className={s.logo}> Zbiorniki stalowe</div>
+              <img className={s.logo} src={logo} alt="logo"></img>
             </div>
           </Link>
 

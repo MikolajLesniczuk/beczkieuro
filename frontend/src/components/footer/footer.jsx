@@ -24,9 +24,9 @@ export const Footer = () => {
         <div className={s.width}>
           <div className={s.title}>Zapraszamy do kontaktu</div>
           <div className={s.phrase}>
-            Usługi alpinistyczne to nasza praca ale również pasja.
+            Jeżeli potrzebujesz dodatkowych informacji skontatuj się z nami
           </div>
-          <div className={s.phrase2}>Bądźmy w kontakcie</div>
+          <div className={s.phrase2}></div>
           <div className={s.flexik}>
             {/* <div className={s.flexkolumn}>
               <img className={s.adres} src={adres} alt="adres"></img>
@@ -41,17 +41,17 @@ export const Footer = () => {
 
             <div className={s.flexkolumn}>
               {" "}
-              <a className={s.style} href="mailto:alpimix.kontakt@gmail.com">
+              <a className={s.style} href="mailto:nyga.transport@interia.pl">
                 <img className={s.email} alt="email" src={email}></img>
-                alpimix.kontakt@gmail.com
+                nyga.transport@interia.pl
               </a>
             </div>
 
             <div className={s.flexkolumn}>
               {" "}
-              <a className={s.style} href="tel:+48514028592">
+              <a className={s.style} href="tel:+48605724140">
                 <img className={s.tel} alt="tel" src={tel}></img>
-                +48514028592
+                +48605724140
               </a>
             </div>
           </div>
