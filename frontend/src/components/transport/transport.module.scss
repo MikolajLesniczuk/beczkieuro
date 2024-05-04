@@ -1,0 +1,60 @@
+.title {
+  margin: 60px auto 60px auto;
+  font-size: 50px;
+  text-align: center;
+  color: beige;
+}
+.desc {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  font-size: 25px;
+  color: beige;
+}
+.end {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: beige;
+}
+.li {
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 2px solid white;
+  list-style: none;
+  width: 20%;
+  border-radius: 15px;
+  height: 400px;
+  color: beige;
+  transition: 0.3s ease-in-out;
+}
+.li:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+  background-color: #9b6b6b;
+}
+.tyt {
+  font-size: 30px;
+  text-align: center;
+  color: beige;
+
+  //   height: 80px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: beige;
+}
+.opis {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  color: beige;
+  font-size: 20px;
+}
+.box {
+  display: block;
+  margin: 0 auto 60px auto;
+}
