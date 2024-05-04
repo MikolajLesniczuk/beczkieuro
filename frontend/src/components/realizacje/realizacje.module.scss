@@ -13,6 +13,19 @@
   margin: 0 auto;
 }
 
+.gallery {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.descphoto {
+  margin-top: 0;
+}
+.price {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .opis {
   font-size: 18px;
   // text-transform: uppercase;
@@ -27,7 +40,7 @@
 
 @media (min-width: 768px) {
   .opis {
-    font-size: 36px;
+    font-size: 30px;
   }
   .photo {
     width: 400px;
@@ -35,5 +48,17 @@
     margin: 15px;
     transition: 0.3s ease-in-out;
     border-radius: 15px;
+  }
+  .gallery {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .descphoto {
+    margin-top: 0;
+  }
+  .price {
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }
