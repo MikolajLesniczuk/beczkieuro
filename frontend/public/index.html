@@ -17,23 +17,5 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      if (typeof Storage !== "undefined") {
-        // Jeśli tak, pobierz ostatnią odwiedzoną stronę z localStorage
-        var lastVisitedPage = localStorage.getItem("lastVisitedPage");
-        // Jeśli istnieje zapisana strona, przekieruj użytkownika do niej
-        if (lastVisitedPage) {
-          window.location.href = lastVisitedPage;
-        }
-      }
-
-      // Nasłuchiwanie zdarzenia przed opuszczeniem strony
-      window.addEventListener("beforeunload", function () {
-        // Zapisz aktualną stronę w localStorage przed opuszczeniem strony
-        if (typeof Storage !== "undefined") {
-          localStorage.setItem("lastVisitedPage", window.location.href);
-        }
-      });
-    </script>
   </body>
 </html>
