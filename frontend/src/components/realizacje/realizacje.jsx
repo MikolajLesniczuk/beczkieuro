@@ -25,7 +25,7 @@ export const Realizacje = () => {
       <div className={s.opis}>
         Nasz asortyment składa się ze zbiorników o różnych pojemnościach.
         Posiadamy w spzedaży zbiorniki od 500L do 100.000 L
-        <p>Podane ceny są cenami do negocjacji</p>
+        <p>Podane ceny są cenami netto do negocjacji</p>
         <p>Możliwość załadunku i transportu każdego zbiornika</p>
       </div>
       <div className={s.positionphoto}>
