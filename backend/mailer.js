@@ -8,7 +8,6 @@ const path = require("path");
 const app = express();
 const PORT = 3050;
 const KEY = process.env.KEY;
-
 sgMail.setApiKey(KEY);
 app.use(cors());
 app.use(bodyParser.json());
@@ -39,7 +38,7 @@ app.get("/gets", (req, res) => {
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
+  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
 });
 
 app.listen(PORT, () => {
