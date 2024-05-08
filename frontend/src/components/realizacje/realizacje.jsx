@@ -25,8 +25,9 @@ export const Realizacje = () => {
       <div className={s.opis}>
         Nasz asortyment składa się ze zbiorników o różnych pojemnościach.
         Posiadamy w spzedaży zbiorniki od 500L do 100.000 L
-        <p>Podane ceny są cenami netto do negocjacji</p>
+        <p>Poniżej przykładowe zdjęcia zbiorników wraz z podaną pojemnością</p>
         <p>Możliwość załadunku i transportu każdego zbiornika</p>
+        <p>Interesuje Cię inny zbiornik? Zadzwoń, z chęcią pomożemy!</p>
       </div>
       <div className={s.positionphoto}>
         <div className={s.gallery}>
@@ -35,64 +36,64 @@ export const Realizacje = () => {
             <p className={s.descphoto}>
               Zbiornik stalowy dwupłaszczowy 13.000L
             </p>
-            <p className={s.price}>13.900zł</p>
+            {/* <p className={s.price}>13.900zł</p> */}
           </div>
           <div className={s.box}>
             <img alt="something" className={s.photo} src={nineteen}></img>
             <p className={s.descphoto}>Zbiornik dwupłaszczowy 100.000 L</p>
-            <p className={s.price}>42.000zł</p>
+            {/* <p className={s.price}>42.000zł</p> */}
           </div>
           <div>
             <img alt="something" className={s.photo} src={two}></img>
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>23.900zł</p>
+            {/* <p className={s.price}>23.900zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={one}></img>
             <p className={s.descphoto}>Zbiornik stalowy 100.000 L</p>
-            <p className={s.price}>69.000zł</p>
+            {/* <p className={s.price}>69.000zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={three}></img>
             <p className={s.descphoto}>
               Zbiornik stalowy dwupłaszczowy 40.000 L
             </p>
-            <p className={s.price}>36.000zł</p>
+            {/* <p className={s.price}>36.000zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={four}></img>
             <p className={s.descphoto}>
               Zbiornik stalowy dwupłaszczowy 60.000L
             </p>
-            <p className={s.price}>52.000zł</p>
+            {/* <p className={s.price}>52.000zł</p> */}
           </div>
           <div>
             <img alt="something" className={s.photo} src={aaa}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>23.900zł</p>
+            {/* <p className={s.price}>23.900zł</p> */}
           </div>
           <div>
             <img alt="something" className={s.photo} src={five}></img>
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>24.500 zł</p>
+            {/* <p className={s.price}>24.500 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={six}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>24.500 zł</p>
+            {/* <p className={s.price}>24.500 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={seven}></img>
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>24.500 zł</p>
+            {/* <p className={s.price}>24.500 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={eight}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 3.000L</p>
-            <p className={s.price}>1.200 zł</p>
+            {/* <p className={s.price}>1.200 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={nine}></img>
@@ -100,55 +101,55 @@ export const Realizacje = () => {
             <p className={s.descphoto}>
               Zbiornik stalowy dwupłaszczowy 40.000 L
             </p>
-            <p className={s.price}>35.000 zł</p>
+            {/* <p className={s.price}>35.000 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={eleven}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 5.000 L</p>
-            <p className={s.price}>2.100 zł</p>
+            {/* <p className={s.price}>2.100 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={twelve}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 10.000L</p>
-            <p className={s.price}>5.300 zł</p>
+            {/* <p className={s.price}>5.300 zł</p> */}
           </div>
           <div>
             <img alt="something" className={s.photo} src={fifteen}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 20.000L</p>
-            <p className={s.price}>4.900 zł</p>
+            {/* <p className={s.price}>4.900 zł</p> */}
           </div>
           <div>
             <img alt="something" className={s.photo} src={sixteen}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>24.500 zł</p>
+            {/* <p className={s.price}>24.500 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={seventeen}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>24.500 zł</p>
+            {/* <p className={s.price}>24.500 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={eighteen}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy50.000 L</p>
-            <p className={s.price}>23.900 zł</p>
+            {/* <p className={s.price}>23.900 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={twenty}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>23.900 zł</p>
+            {/* <p className={s.price}>23.900 zł</p> */}
           </div>{" "}
           <div>
             <img alt="something" className={s.photo} src={twentythree}></img>
 
             <p className={s.descphoto}>Zbiornik stalowy 50.000 L</p>
-            <p className={s.price}>23.900 zł</p>
+            {/* <p className={s.price}>23.900 zł</p> */}
           </div>
         </div>
       </div>
