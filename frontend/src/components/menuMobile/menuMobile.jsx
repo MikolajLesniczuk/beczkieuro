@@ -3,8 +3,6 @@ import s from "./menuMobile.module.scss";
 import logo2 from "../../assets/beczki/7logo.jpg";
 
 import close from "../../assets/images/svg/icon-close.svg";
-import twitter from "../../assets/images/svg/icon-twitter.svg";
-import facebook from "../../assets/images/svg/icon-facebook.svg";
 import { Link, NavLink } from "react-router-dom";
 import { ModalZap } from "../modal/modal";
 import { useState } from "react";
@@ -54,22 +52,6 @@ export const MobileMenu = ({ closeModal }) => {
               </button>
             )}
           </div>
-        </div>
-        <div className={s.positionsocial}>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className={s.icon} src={facebook} alt="logofacebook" />
-          </a>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className={s.icon} src={twitter} alt="logotwitter" />
-          </a>
         </div>
       </div>
     </>

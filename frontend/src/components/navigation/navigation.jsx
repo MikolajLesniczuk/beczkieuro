@@ -4,7 +4,7 @@ import hamburger from "../../assets/images/svg/icon-hamburger.svg";
 import logo from "../../assets/beczki/7logo.jpg";
 
 import { MobileMenu } from "../menuMobile/menuMobile";
-import { Link } from "react-router-dom"; // Zmiana na Link
+import { Link, NavLink } from "react-router-dom"; // Zmiana na Link
 import { ModalZap } from "../modal/modal";
 
 export const Navigation = () => {
@@ -55,25 +55,24 @@ export const Navigation = () => {
           </Link>
 
           <div className={s.boxnav}>
-            <Link onClick={scrollToTop} className={s.features} to="/onas">
+            <NavLink onClick={scrollToTop} className={s.features} to="/onas">
               {" "}
               {/* Zmiana na Link */}O nas
-            </Link>
-            <Link onClick={scrollToTop} className={s.pricing} to="/oferta">
+            </NavLink>
+            <NavLink onClick={scrollToTop} className={s.pricing} to="/oferta">
               {" "}
               {/* Zmiana na Link */}
               Oferta
-            </Link>
-            <Link onClick={scrollToTop} className={s.oferta} to="/transport">
+            </NavLink>
+            <NavLink onClick={scrollToTop} className={s.oferta} to="/transport">
               {" "}
-              {/* Zmiana na Link */}
               Transport
-            </Link>
-            <Link onClick={scrollToTop} className={s.contact} to="/kontakt">
+            </NavLink>
+            <NavLink onClick={scrollToTop} className={s.contact} to="/kontakt">
               {" "}
               {/* Zmiana na Link */}
               Kontakt
-            </Link>
+            </NavLink>
             <div>
               {isModalOpen ? (
                 <ModalZap closeModal={closeModal} />
