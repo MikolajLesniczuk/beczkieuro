@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e2d7de52.css",
-    "main.js": "/static/js/main.d1412269.js",
+    "main.css": "/static/css/main.a79dd156.css",
+    "main.js": "/static/js/main.dad7d945.js",
     "static/media/8.jpg": "/static/media/8.17a1c6a60718cebe1995.jpg",
     "static/media/4.jpg": "/static/media/4.ee49aa45c272d31a895d.jpg",
     "static/media/6.jpg": "/static/media/6.058665b3ddb1ef58ca4c.jpg",
@@ -26,15 +26,13 @@
     "static/media/mail.png": "/static/media/mail.e9d3d5c4d5b851c3798e.png",
     "static/media/pngegg.png": "/static/media/pngegg.b94b20049c3725b9eae2.png",
     "index.html": "/index.html",
-    "static/media/icon-twitter.svg": "/static/media/icon-twitter.dde79e7edd3892319de2ee22ea7ca39d.svg",
-    "static/media/icon-facebook.svg": "/static/media/icon-facebook.8b45ba94b5f75f0d38a9bbcc11df55c2.svg",
     "static/media/icon-close.svg": "/static/media/icon-close.b04dc29397de9c9f194fb075c140e966.svg",
     "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.42e57f367f97a7dcc85d4d6ee45ff2da.svg",
-    "main.e2d7de52.css.map": "/static/css/main.e2d7de52.css.map",
-    "main.d1412269.js.map": "/static/js/main.d1412269.js.map"
+    "main.a79dd156.css.map": "/static/css/main.a79dd156.css.map",
+    "main.dad7d945.js.map": "/static/js/main.dad7d945.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2d7de52.css",
-    "static/js/main.d1412269.js"
+    "static/css/main.a79dd156.css",
+    "static/js/main.dad7d945.js"
   ]
 }
