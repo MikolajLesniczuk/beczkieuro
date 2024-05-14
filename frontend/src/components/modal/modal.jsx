@@ -28,7 +28,7 @@ export const ModalZap = ({ closeModal }) => {
         setEmail("");
         setTelefon("");
         setTrescZapytania("");
-        console.log("E-mail wysłaaaaany!");
+        console.log("E-mail wysłany!");
         Notiflix.Notify.success("Email został wysłany poprawnie");
       } else {
         Notiflix.Notify.failure("Podczas wysyłania e-maila wystąpił błąd");
