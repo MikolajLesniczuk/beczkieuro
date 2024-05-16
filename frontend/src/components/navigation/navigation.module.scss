@@ -65,10 +65,16 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    // border: 2px solid black;
+    height: 65px;
+    padding-top: 15px;
+    border-radius: 20px;
+    background-color: gray;
+    opacity: 0.7;
   }
   .bgim {
     // background-image: url(../../assets/alpfoto/realiza/bicek.jpg);
-    background-image: url(../../assets/beczki/2.jpg);
+    background-image: url(../../assets/beczki/biala.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,8 +99,8 @@
     width: auto;
     height: 20px;
     font-size: 20px;
-    // color: hsl(229, 8%, 60%);
     color: black;
+    font-weight: 700;
 
     letter-spacing: 1.25px;
     text-transform: uppercase;
@@ -118,7 +124,7 @@
     font-size: 20px;
     // color: hsl(229, 8%, 60%);
     color: black;
-
+    font-weight: 700;
     letter-spacing: 1.25px;
     text-transform: uppercase;
     font-family: "Rubik", sans-serif;
@@ -139,8 +145,8 @@
     padding: 10px;
     width: auto;
     height: 20px;
-    // color: hsl(229, 8%, 60%);
     color: black;
+    font-weight: 700;
 
     letter-spacing: 1.25px;
     text-transform: uppercase;
@@ -162,8 +168,8 @@
     width: auto;
     height: 20px;
     font-size: 20px;
-    // color: hsl(229, 8%, 60%);
     color: black;
+    font-weight: 700;
 
     letter-spacing: 1.25px;
     text-transform: uppercase;

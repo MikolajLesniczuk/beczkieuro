@@ -57,11 +57,10 @@ export const Navigation = () => {
           <div className={s.boxnav}>
             <NavLink onClick={scrollToTop} className={s.features} to="/onas">
               {" "}
-              {/* Zmiana na Link */}O nas
+              O nas
             </NavLink>
             <NavLink onClick={scrollToTop} className={s.pricing} to="/oferta">
               {" "}
-              {/* Zmiana na Link */}
               Oferta
             </NavLink>
             <NavLink onClick={scrollToTop} className={s.oferta} to="/transport">
@@ -70,7 +69,6 @@ export const Navigation = () => {
             </NavLink>
             <NavLink onClick={scrollToTop} className={s.contact} to="/kontakt">
               {" "}
-              {/* Zmiana na Link */}
               Kontakt
             </NavLink>
             <div>
