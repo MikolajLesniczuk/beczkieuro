@@ -30,8 +30,9 @@ export const Realizacje = () => {
         <p>
           Nasz asortyment składa się ze zbiorników stalowych, plastikowych oraz
           ze stali nierdzewnej o różnych pojemnościach i różnym zastosowaniu.
-          Oferujemy zbiorniki przeciwpożarowe, zbiorniki RSM, zbiorniki na
-          deszczówkę, zbiorniki na wodę oraz zbiorniki na szambo.
+          Oferujemy zbiorniki przeciwpożarowe, zbiorniki na RSM, zbiorniki na
+          deszczówkę, zbiorniki na wodę, zbiorniki na szambo oraz zbiorniki na
+          paliwo.
         </p>
         <Link className={s.title} to="/oferta/ppoz">
           <h2>Zbiorniki przeciwpożarowe</h2>
@@ -86,6 +87,18 @@ export const Realizacje = () => {
           są wykonane z najwyższej jakości materiałów, zapewniających ich
           długowieczność i odporność na uszkodzenia. Dzięki naszym zbiornikom
           możesz bezpiecznie magazynować wodę pitną, techniczną oraz deszczową.
+        </p>
+        <Link className={s.title} to="/oferta/paliwo">
+          <h2>Zbiorniki na paliwo</h2>
+        </Link>
+        <p className={s.description}>
+          Nasze zbiorniki na paliwo to solidne i bezpieczne rozwiązania do
+          przechowywania różnych rodzajów paliw, takich jak olej napędowy,
+          benzyna i inne. Zbiorniki są wykonane z materiałów odpornych na
+          działanie paliw oraz korozję, co zapewnia ich długotrwałe użytkowanie.
+          Oferujemy zbiorniki w różnych pojemnościach, które można dostosować do
+          indywidualnych potrzeb klientów. Nasze zbiorniki na paliwo są zgodne z
+          najwyższymi standardami bezpieczeństwa i jakości.
         </p>
         <p>Poniżej przykładowe zdjęcia zbiorników wraz z podaną pojemnością</p>
         <h3>Możliwość załadunku i transportu każdego zbiornika</h3>

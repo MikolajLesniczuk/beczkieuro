@@ -63,14 +63,29 @@ export const Navigation = () => {
               Oferta
             </NavLink>
             <div className={s.dropdown}>
-              <Link onClick={scrollToTop} className={s.zbiorniki}>
+              <Link
+                to="/zbiorniki/ppoz"
+                onClick={scrollToTop}
+                className={s.zbiorniki}
+              >
                 Zbiorniki
               </Link>
               <div className={s.dropdownContent}>
-                <Link to="/oferta/ppoż">Zbiorniki ppoż</Link>
-                <Link to="/oferta/deszczowka">Zbiorniki na deszczówkę</Link>
-                <Link to="/oferta/szambo">Zbiorniki na szambo</Link>
-                <Link to="/oferta/rsm">Zbiorniki RSM</Link>
+                <Link onClick={scrollToTop} to="/zbiorniki/ppoz">
+                  Zbiorniki p.poż
+                </Link>
+                <Link onClick={scrollToTop} to="/zbiorniki/deszczowka">
+                  Zbiorniki na deszczówkę
+                </Link>
+                <Link onClick={scrollToTop} to="/zbiorniki/szambo">
+                  Zbiorniki na szambo
+                </Link>
+                <Link onClick={scrollToTop} to="/zbiorniki/rsm">
+                  Zbiorniki na RSM
+                </Link>
+                <Link onClick={scrollToTop} to="/zbiorniki/paliwo">
+                  Zbiorniki na paliwo
+                </Link>
               </div>
             </div>
 

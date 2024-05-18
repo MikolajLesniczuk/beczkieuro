@@ -9,6 +9,11 @@ import { Realizacje } from "./components/realizacje/realizacje";
 import { Navigation } from "./components/navigation/navigation";
 import { Kontakt } from "./components/kontakt/kontakt";
 import { Transport } from "./components/transport/transport";
+import { ZbiornikiNaDeszczowke } from "./components/zbiorniki/deszczowka/deszczowka";
+import { ZbiornikiPrzeciwpozarowe } from "./components/zbiorniki/ppoz/ppoz";
+import Szambo from "./components/zbiorniki/szambo/szambo";
+import { RSM } from "./components/zbiorniki/rsm/rsm";
+import { ZbiornikiNaPaliwo } from "./components/zbiorniki/paliwo/paliwo";
 
 export const App = () => {
   const location = useLocation();
@@ -40,6 +45,17 @@ export const App = () => {
           <Route path="/oferta" element={<Realizacje />} />
           <Route path="/transport" element={<Transport />} />
           <Route path="/kontakt" element={<Kontakt />} />
+          <Route
+            path="/zbiorniki/deszczowka"
+            element={<ZbiornikiNaDeszczowke />}
+          />
+          <Route
+            path="/zbiorniki/ppoz"
+            element={<ZbiornikiPrzeciwpozarowe />}
+          />
+          <Route path="/zbiorniki/szambo" element={<Szambo />} />
+          <Route path="/zbiorniki/rsm" element={<RSM />} />
+          <Route path="/zbiorniki/paliwo" element={<ZbiornikiNaPaliwo />} />
         </Routes>
       </div>
       <Footer />

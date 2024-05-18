@@ -1,0 +1,60 @@
+// Szambo.module.scss
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* ciemne tło */
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f0f0f0; /* jasny kolor tekstu */
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0; /* jasny kolor tekstu */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #f0f0f0; /* jasny kolor tekstu */
+}
+
+.subsubtitle {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f0f0f0; /* jasny kolor tekstu */
+}
+
+.text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0; /* jasny kolor tekstu */
+}
+
+.list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+
+  li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* jasny kolor tekstu */
+  }
+}
+
+.contact {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  color: #e0e0e0; /* jasny kolor tekstu */
+  font-weight: bold;
+}

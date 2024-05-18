@@ -16,8 +16,8 @@ export const Hero = () => {
                 Witaj w EURO-TRUCK-SERVICE - Twoim partnerze w dostawie wysokiej
                 jakości używanych zbiorników stalowych, plastikowych oraz ze
                 stali nierdzewnej o różnych pojemnościach, takich jak zbiorniki
-                przeciwpożarowe, zbiorniki na wodę, zbiorniki na szambo oraz
-                zbiorniki na deszczówkę.
+                przeciwpożarowe, zbiorniki na wodę, zbiorniki na szambo,
+                zbiorniki na deszczówkę oraz zbiorniki na paliwo.
               </p>
               <p>
                 Zespół specjalistów z EURO-TRUCK-SERVICE jest zawsze gotowy do
@@ -30,7 +30,7 @@ export const Hero = () => {
                 Jeśli potrzebujesz niezawodnych zbiorników stalowych, skontaktuj
                 się z nami już dziś. EURO-TRUCK-SERVICE - Twoje zaufane źródło
                 wysokiej jakości rozwiązań do przechowywania substancji takich
-                jak woda, chemikalia czy ścieki.
+                jak woda, paliwo, chemikalia czy ścieki.
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ export const Hero = () => {
                 potrzeb klienta. Nasze rozwiązania są projektowane z myślą o
                 różnorodnych zastosowaniach, zapewniając optymalne rozwiązanie
                 dla każdego projektu, w tym zbiorniki przeciwpożarowe, na wodę,
-                szambo i deszczówkę.
+                szambo, deszczówkę i paliwo.
               </p>
             </div>
             <div className={s.center}>

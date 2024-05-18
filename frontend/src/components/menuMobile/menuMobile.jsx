@@ -49,17 +49,20 @@ export const MobileMenu = ({ closeModal }) => {
             Zbiorniki
           </button>
           <div className={s.dropdownContent}>
-            <Link onClick={closeModal} to="/oferta/ppoż">
+            <Link onClick={closeModal} to="/zbiorniki/ppoz">
               Zbiorniki ppoż
             </Link>
-            <Link onClick={closeModal} to="/oferta/deszczowka">
+            <Link onClick={closeModal} to="/zbiorniki/deszczowka">
               Zbiorniki na deszczówkę
             </Link>
-            <Link onClick={closeModal} to="/oferta/szambo">
+            <Link onClick={closeModal} to="/zbiorniki/szambo">
               Zbiorniki na szambo
             </Link>
-            <Link onClick={closeModal} to="/oferta/rsm">
+            <Link onClick={closeModal} to="/zbiorniki/rsm">
               Zbiorniki RSM
+            </Link>
+            <Link onClick={closeModal} to="/zbiorniki/paliwo">
+              Zbiorniki na paliwo
             </Link>
           </div>
         </div>
