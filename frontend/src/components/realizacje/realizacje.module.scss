@@ -1,3 +1,13 @@
+.title {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.description {
+  font-size: 18px;
+  font-style: italic;
+}
 .photo {
   width: 300px;
   height: 220px;
@@ -61,5 +71,15 @@
   .price {
     margin-top: 0;
     margin-bottom: 50px;
+  }
+  .title {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  .description {
+    font-size: 20px;
+    font-style: italic;
   }
 }
