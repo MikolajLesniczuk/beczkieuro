@@ -1,5 +1,3 @@
-// Szambo.js
-
 import React from "react";
 import s from "./szambo.module.scss";
 
