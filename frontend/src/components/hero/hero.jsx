@@ -3,6 +3,7 @@ import dosw from "../../assets/alpfoto/bezp.png";
 import prof from "../../assets/alpfoto/prof.png";
 import bezp from "../../assets/alpfoto/bezpie.png";
 import cert from "../../assets/alpfoto/cert.png";
+import { Onas } from "../onas/onas";
 
 export const Hero = () => {
   return (
@@ -92,6 +93,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
+      <Onas />
     </>
   );
 };
