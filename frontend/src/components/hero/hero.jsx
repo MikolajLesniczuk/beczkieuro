@@ -11,7 +11,8 @@ export const Hero = () => {
       <div className={s.bg}>
         <div className={s.container}>
           <div>
-            <h2 className={s.dlaczego}>Dlaczego my?</h2>
+            {/* eslint-disable-next-line */}
+            <h2 className={s.dlaczego}></h2>
             <div className={s.desc}>
               <p>
                 Witaj w EURO-TRUCK-SERVICE - Twoim partnerze w dostawie wysokiej

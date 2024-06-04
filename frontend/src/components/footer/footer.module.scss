@@ -4,7 +4,7 @@
   margin-top: 80px;
   display: block;
   height: 100%;
-  background-image: url(../../assets/beczki/8.jpg);
+  background-image: url(../../assets/beczki/czarna.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,9 +69,10 @@
   color: black;
 
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
+  text-transform: uppercase;
   font-weight: bold;
-  margin: 10px auto 0 auto;
+  margin: 15px auto 0 auto;
 }
 
 .phrase2 {
@@ -147,7 +148,7 @@
     display: block;
     height: 300px;
     // background-image: url(../../assets/alpfoto/realiza/panorama.jpg);
-    background-image: url(../../assets/beczki/8.jpg);
+    background-image: url(../../assets/beczki/czarna.jpg);
 
     background-position: center;
     background-size: cover;
