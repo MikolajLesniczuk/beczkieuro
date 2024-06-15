@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import s from "./menuMobile.module.scss";
-import logo2 from "../../assets/beczki/7logo.jpg";
+import logo2 from "../../assets/beczki/7logomob.png";
 import close from "../../assets/images/svg/icon-close.svg";
 import { Link, NavLink } from "react-router-dom";
 import { ModalZap } from "../modal/modal";
