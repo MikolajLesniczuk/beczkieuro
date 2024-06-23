@@ -21,9 +21,18 @@ import seventeen from "../../assets/beczki/1.jpg";
 import eighteen from "../../assets/beczki/2.jpg";
 import nineteen from "../../assets/beczki/8.jpg";
 import twenty from "../../assets/beczki/nowa.jpg";
+import silos from "../../assets/beczki/nowe/silos.jpg";
+import silos1 from "../../assets/beczki/nowe/silos1.jpg";
+import zlota from "../../assets/beczki/nowe/zlota.jpg";
 import twentythree from "../../assets/beczki/4.jpg";
 
 export const Realizacje = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 550,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <div className={s.opis}>
@@ -34,78 +43,138 @@ export const Realizacje = () => {
           deszczówkę, zbiorniki na wodę, zbiorniki na szambo oraz zbiorniki na
           paliwo.
         </p>
-        <Link className={s.title} to="/oferta/ppoz">
-          <h2>Zbiorniki przeciwpożarowe</h2>
-        </Link>
-        <p className={s.description}>
-          Oferujemy najwyższej jakości zbiorniki przeciwpożarowe, które
-          zapewniają niezawodną ochronę przeciwpożarową. Nasze zbiorniki są
-          wykonane z trwałych materiałów, odpornych na korozję i uszkodzenia
-          mechaniczne. Idealnie nadają się do przechowywania wody używanej w
-          systemach przeciwpożarowych w budynkach mieszkalnych, komercyjnych
-          oraz przemysłowych.
-        </p>
-        <Link className={s.title} to="/oferta/szambo">
-          <h2>Zbiorniki na szambo</h2>
-        </Link>
-        <p className={s.description}>
-          Nasze zbiorniki na szambo to idealne rozwiązanie dla gospodarstw
-          domowych oraz przedsiębiorstw, które potrzebują skutecznego i
-          bezpiecznego systemu przechowywania ścieków. Zapewniamy szeroki wybór
-          pojemności, dzięki czemu można je dopasować do indywidualnych potrzeb.
-          Zbiorniki są szczelne i łatwe w montażu, co zapewnia długotrwałe i
-          bezproblemowe użytkowanie.
-        </p>
-        <Link className={s.title} to="/oferta/rsm">
-          <h2>Zbiorniki na RSM</h2>
-        </Link>
-        <p className={s.description}>
-          Specjalizujemy się w dostarczaniu zbiorników na RSM (Roztwór
-          Saletrzano-Mocznikowy), które są niezbędne w rolnictwie do
-          przechowywania i dystrybucji nawozów płynnych. Nasze zbiorniki
-          charakteryzują się wysoką odpornością chemiczną i mechaniczną, co
-          gwarantuje bezpieczne przechowywanie nawozów przez długi czas.
-          Oferujemy różne rozmiary i pojemności, aby spełnić wymagania każdego
-          gospodarstwa rolnego.
-        </p>
-        <Link className={s.title} to="/oferta/deszczowka">
-          <h2>Zbiorniki na deszczówkę</h2>
-        </Link>
-        <p className={s.description}>
-          W naszej ofercie znajdziesz wysokiej jakości zbiorniki na deszczówkę,
-          które pozwolą Ci efektywnie zbierać i przechowywać wodę opadową.
-          Zbiorniki te są ekologiczne i ekonomiczne, a ich zastosowanie pozwala
-          na znaczne oszczędności w zużyciu wody pitnej. Nasze produkty są
-          trwałe, łatwe w instalacji i dostępne w różnych pojemnościach.
-        </p>
-        <Link className={s.title} to="/oferta/woda">
-          <h2>Zbiorniki na wodę</h2>
-        </Link>
-        <p className={s.description}>
-          Oferujemy szeroki wybór zbiorników na wodę, które doskonale sprawdzą
-          się zarówno w domach, jak i w obiektach przemysłowych. Nasze zbiorniki
-          są wykonane z najwyższej jakości materiałów, zapewniających ich
-          długowieczność i odporność na uszkodzenia. Dzięki naszym zbiornikom
-          możesz bezpiecznie magazynować wodę pitną, techniczną oraz deszczową.
-        </p>
-        <Link className={s.title} to="/oferta/paliwo">
-          <h2>Zbiorniki na paliwo</h2>
-        </Link>
-        <p className={s.description}>
-          Nasze zbiorniki na paliwo to solidne i bezpieczne rozwiązania do
-          przechowywania różnych rodzajów paliw, takich jak olej napędowy,
-          benzyna i inne. Zbiorniki są wykonane z materiałów odpornych na
-          działanie paliw oraz korozję, co zapewnia ich długotrwałe użytkowanie.
-          Oferujemy zbiorniki w różnych pojemnościach, które można dostosować do
-          indywidualnych potrzeb klientów. Nasze zbiorniki na paliwo są zgodne z
-          najwyższymi standardami bezpieczeństwa i jakości.
-        </p>
+        <div className={s.flex}>
+          <Link onClick={scrollToTop} className={s.boxik} to="/zbiorniki/ppoz">
+            <div>
+              <h2 className={s.title}>Zbiorniki przeciwpożarowe</h2>
+
+              <p className={s.description}>
+                Oferujemy najwyższej jakości zbiorniki przeciwpożarowe, które
+                zapewniają niezawodną ochronę przeciwpożarową. Nasze zbiorniki
+                są wykonane z trwałych materiałów, odpornych na korozję i
+                uszkodzenia mechaniczne. Idealnie nadają się do przechowywania
+                wody używanej w systemach przeciwpożarowych w budynkach
+                mieszkalnych, komercyjnych oraz przemysłowych.
+              </p>
+            </div>
+          </Link>
+          <Link
+            onClick={scrollToTop}
+            className={s.boxik}
+            to="/zbiorniki/szambo"
+          >
+            <div>
+              <h2 className={s.title}>Zbiorniki na szambo</h2>
+
+              <p className={s.description}>
+                Nasze zbiorniki na szambo to idealne rozwiązanie dla gospodarstw
+                domowych oraz przedsiębiorstw, które potrzebują skutecznego i
+                bezpiecznego systemu przechowywania ścieków. Zapewniamy szeroki
+                wybór pojemności, dzięki czemu można je dopasować do
+                indywidualnych potrzeb. Zbiorniki są szczelne i łatwe w montażu,
+                co zapewnia długotrwałe i bezproblemowe użytkowanie.
+              </p>
+            </div>
+          </Link>
+          <Link onClick={scrollToTop} className={s.boxik} to="/zbiorniki/rsm">
+            <div>
+              <h2 className={s.title}>Zbiorniki na RSM</h2>
+
+              <p className={s.description}>
+                Specjalizujemy się w dostarczaniu zbiorników na RSM (Roztwór
+                Saletrzano-Mocznikowy), które są niezbędne w rolnictwie do
+                przechowywania i dystrybucji nawozów płynnych. Nasze zbiorniki
+                charakteryzują się wysoką odpornością chemiczną i mechaniczną,
+                co gwarantuje bezpieczne przechowywanie nawozów przez długi
+                czas. Oferujemy różne rozmiary i pojemności, aby spełnić
+                wymagania każdego gospodarstwa rolnego.
+              </p>
+            </div>
+          </Link>
+          <Link
+            onClick={scrollToTop}
+            className={s.boxik}
+            to="/zbiorniki/deszczowka"
+          >
+            <div>
+              <h2 className={s.title}>Zbiorniki na deszczówkę</h2>
+
+              <p className={s.description}>
+                W naszej ofercie znajdziesz wysokiej jakości zbiorniki na
+                deszczówkę, które pozwolą Ci efektywnie zbierać i przechowywać
+                wodę opadową. Zbiorniki te są ekologiczne i ekonomiczne, a ich
+                zastosowanie pozwala na znaczne oszczędności w zużyciu wody
+                pitnej. Nasze produkty są trwałe, łatwe w instalacji i dostępne
+                w różnych pojemnościach.
+              </p>
+            </div>
+          </Link>
+          <Link onClick={scrollToTop} className={s.boxik} to="/zbiorniki/woda">
+            <div>
+              <h2 className={s.title}>Zbiorniki na wodę</h2>
+
+              <p className={s.description}>
+                Oferujemy szeroki wybór zbiorników na wodę, które doskonale
+                sprawdzą się zarówno w domach, jak i w obiektach przemysłowych.
+                Nasze zbiorniki są wykonane z najwyższej jakości materiałów,
+                zapewniających ich długowieczność i odporność na uszkodzenia.
+                Dzięki naszym zbiornikom możesz bezpiecznie magazynować wodę
+                pitną, techniczną oraz deszczową.
+              </p>
+            </div>
+          </Link>
+          <Link
+            onClick={scrollToTop}
+            className={s.boxik}
+            to="/zbiorniki/paliwo"
+          >
+            <div>
+              <h2 className={s.title}>Zbiorniki na paliwo</h2>
+
+              <p className={s.description}>
+                Nasze zbiorniki na paliwo to solidne i bezpieczne rozwiązania do
+                przechowywania różnych rodzajów paliw, takich jak olej napędowy,
+                benzyna i inne. Zbiorniki są wykonane z materiałów odpornych na
+                działanie paliw oraz korozję, co zapewnia ich długotrwałe
+                użytkowanie. Oferujemy zbiorniki w różnych pojemnościach, które
+                można dostosować do indywidualnych potrzeb klientów. Nasze
+                zbiorniki na paliwo są zgodne z najwyższymi standardami
+                bezpieczeństwa i jakości.
+              </p>
+            </div>
+          </Link>
+        </div>
+
         <p>Poniżej przykładowe zdjęcia zbiorników wraz z podaną pojemnością</p>
         <h3>Możliwość załadunku i transportu każdego zbiornika</h3>
         <p>Interesuje Cię inny zbiornik? Zadzwoń, z chęcią pomożemy!</p>
       </div>
       <div className={s.positionphoto}>
         <div className={s.gallery}>
+          <div className={s.box}>
+            <img
+              alt="Zbiornik stalowy 100.000 L"
+              className={s.photo}
+              src={zlota}
+            />
+            <p className={s.descphoto}>Zbiornik stalowy 100.000 L</p>
+          </div>
+          <div className={s.box}>
+            <img
+              alt="Zbiornik aluminiowy 125.000 L"
+              className={s.photo}
+              src={silos}
+            />
+            <p className={s.descphoto}>Zbiornik aluminiowy 125.000 L</p>
+          </div>
+          <div className={s.box}>
+            <img
+              alt="Zbiornik aluminiowy 125.000 L"
+              className={s.photo}
+              src={silos1}
+            />
+            <p className={s.descphoto}>Zbiornik aluminiowy 125.000 L</p>
+          </div>
           <div className={s.box}>
             <img
               alt="Zbiornik stalowy dwupłaszczowy 13.000L"

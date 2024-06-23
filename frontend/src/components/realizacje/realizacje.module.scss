@@ -1,12 +1,12 @@
 .title {
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: beige;
   font-weight: 700;
+  font-style: italic;
 }
 .description {
   font-size: 18px;
-  font-style: italic;
 }
 .photo {
   width: 300px;
@@ -47,6 +47,26 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.boxik {
+  width: 80%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+  // background-color: aqua;
+}
+.boxik:hover {
+  transform: scale(1.1);
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 @media (min-width: 768px) {
   .opis {
@@ -73,14 +93,36 @@
     margin-bottom: 50px;
   }
   .title {
+    font-size: 30px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: beige;
     font-weight: 700;
+    font-style: italic;
   }
   .description {
-    font-size: 20px;
-    font-style: italic;
+    font-size: 18px;
     margin-bottom: 80px;
+  }
+  .boxik {
+    width: 27%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    // background-color: aqua;
+  }
+  .boxik:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 40px rgba(255, 215, 0, 0.5);
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
